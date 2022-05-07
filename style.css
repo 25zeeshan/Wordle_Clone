@@ -6,11 +6,15 @@
 
 body {
     background-color: rgb(34, 33, 33);
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 1rem;
     font-size: clamp(.5rem, 2.5vmin, 1.5rem);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .keyboard {
@@ -66,14 +70,14 @@ body {
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    grid-template-columns: repeat(5, 4em);
-    grid-template-rows: repeat(6, 4em);
+    grid-template-columns: repeat(5, 3em);
+    grid-template-rows: repeat(6, 3em);
     gap: .25em;
     margin-bottom: 1em;
 }
 
 .tile {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     border: .05em solid hsl(240, 1%, 27%);
     text-transform: uppercase;
@@ -185,4 +189,31 @@ body {
 
 .alert.hide {
     opacity: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.navbar .heading {
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.reset-btn {
+    width: 6em;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(200, 1%, 30%);
+    border: none;
+    border-radius: 2px;
+}
+
+.reset-btn:hover {
+    background-color: hsl(180, 1%, 55%);
 }
