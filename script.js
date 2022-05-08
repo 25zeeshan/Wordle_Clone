@@ -15298,8 +15298,6 @@ const dictionary = [
 
 
 let targetWord = targetWords[Date.now() % targetWords.length];
-console.log(targetWord, targetWords.length);
-
 
 const keyboard = document.querySelector("[data-keyboard]");
 const alertContainer = document.querySelector("[data-alert-container]");
