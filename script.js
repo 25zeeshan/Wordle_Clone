@@ -2324,8 +2324,6 @@ const targetWords = [
 
 
 let targetWord = targetWords[Date.now() % targetWords.length];
-//console.log(targetWord, targetWords.length);
-
 
 const keyboard = document.querySelector("[data-keyboard]");
 const alertContainer = document.querySelector("[data-alert-container]");
@@ -2535,6 +2533,12 @@ function resetGame() {
         key.classList.remove("wrong-location");
     })
 
+    const alerts = alertContainer.querySelectorAll(".alert");
+    alerts.forEach((alert) => {
+        alert.remove();
+    })
+
     targetWord = targetWords[Date.now() % targetWords.length];
-    //console.log(targetWord);
+
+    startInteraction();
 }

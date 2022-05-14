@@ -219,3 +219,18 @@ body {
 .reset-btn:hover {
     background-color: hsl(180, 1%, 55%);
 }
+
+@media screen and (max-width: 480px) {
+    .input-grid {
+        grid-template-columns: repeat(5, 4em);
+        grid-template-rows: repeat(6, 4em);
+    }
+
+    .keyboard {
+        display: grid;
+        grid-template-columns: repeat(20, minmax(auto, 1.5em));
+        grid-auto-rows: 4em;
+        gap: .25em;
+        justify-content: center;
+    }
+}
