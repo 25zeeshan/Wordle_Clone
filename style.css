@@ -205,13 +205,15 @@ body {
 }
 
 .reset-btn {
-    width: 6em;
+    display: inline-block;
     font-size: 1em;
     cursor: pointer;
     color: white;
     background-color: hsl(200, 1%, 30%);
     border: none;
     border-radius: 2px;
+    text-align: center;
+    padding: 8px 20px;
 }
 
 .reset-btn:hover {
